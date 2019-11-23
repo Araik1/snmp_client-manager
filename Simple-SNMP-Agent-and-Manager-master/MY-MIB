@@ -9,63 +9,63 @@ mySystemInfo       OBJECT IDENTIFIER ::= {enterprises 42}
 
 platform OBJECT-TYPE
     SYNTAX STRING
-    MAX-ACCESS read
+    MAX-ACCESS read-write
     STATUS current
     DESCRIPTION "The system/OS name."
     ::= {mySystemInfo 1}
 
 platformRelease OBJECT-TYPE
     SYNTAX OCTET STRING
-    MAX-ACCESS read
+    MAX-ACCESS read-write
     STATUS current
     DESCRIPTION "The system’s release."
     ::= {mySystemInfo 2}
     
 platformVersion OBJECT-TYPE
     SYNTAX STRING
-    MAX-ACCESS read
+    MAX-ACCESS read-write
     STATUS current
     DESCRIPTION "The system’s release version."
     ::= {mySystemInfo 3}
 
 architecture OBJECT-TYPE
     SYNTAX STRING
-    MAX-ACCESS read
+    MAX-ACCESS read-write
     STATUS current
     DESCRIPTION "The machine type."
     ::= {mySystemInfo 4}
 
 hostname OBJECT-TYPE
     SYNTAX STRING
-    MAX-ACCESS read
+    MAX-ACCESS read-write
     STATUS current
     DESCRIPTION "Host name of the machine."
     ::= {mySystemInfo 5}
 
 ipAddress OBJECT-TYPE
     SYNTAX STRING
-    MAX-ACCESS read
+    MAX-ACCESS read-write
     STATUS current
     DESCRIPTION "Hostname in IPv4 format."
     ::= {mySystemInfo 6}
 
 macAddress OBJECT-TYPE
     SYNTAX STRING
-    MAX-ACCESS read
+    MAX-ACCESS read-write
     STATUS current
     DESCRIPTION "The mac-address of the machine."
     ::= {mySystemInfo 7}
 
 processor OBJECT-TYPE
     SYNTAX STRING
-    MAX-ACCESS read
+    MAX-ACCESS read-write
     STATUS current
     DESCRIPTION "Machine processor."
     ::= {mySystemInfo 8}
 
 ram OBJECT-TYPE
     SYNTAX STRING
-    MAX-ACCESS read
+    MAX-ACCESS read-write
     STATUS current
     DESCRIPTION "Amount of RAM."
     ::= {mySystemInfo 9}
